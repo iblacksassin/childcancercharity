@@ -1,0 +1,1505 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Header */
+header{
+    width: 94%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.258);
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 0 2px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    font-family: Arial;
+    padding: 6px 15px;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+li{
+    list-style: none;
+}
+nav ul li a:hover{
+    background: rgb(16, 187, 16);
+    color: white;
+}
+nav ul li a.current{
+    background: rgb(16, 187, 16);
+    color: white;
+}
+nav ul li a.current:hover{
+    background: orangered;
+}
+.hamburger{
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.hamburger:hover{
+    background: rgba(0, 0, 0, 0.35);
+}
+.hamburger div{
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: white;
+}
+.start{
+    background: url(cancer.jpg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.started{
+    background: #00000069;
+    width: 100%;
+    height: 100vh;
+}
+.starting{
+    font-size: 3rem;
+    padding-top: 12rem;
+    margin-left: 10rem;
+    color: white;
+    width: 30rem;
+    font-weight: 800;
+}
+.starting h3{
+    font-size: 2rem;
+}
+.whatwedo{
+    display: flex;
+    gap: 3rem;
+}
+.container{
+    background: orangered;
+    color: transparent;
+    width: 100px;
+    height: 180vh;
+}
+.row{
+    display: flex;
+}
+.contain{
+    margin-top: 8rem;
+    width: 28rem;
+    padding-right: 10rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.531);
+    animation: appearances linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes appearances {
+    from{
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}   
+.contain, .containing, h2{
+    font-size: 2rem;
+}
+.containing{
+    margin-top: 8rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.531);
+    animation: appearance linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes appearance {
+    from{
+        opacity: 0;
+        transform: translateX(100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+.conts{
+    background: url(cancer\ \(1\).jpg) no-repeat;
+    width: 22rem;
+    height: 65vh;
+    background-size: cover;
+    border-bottom: orangered 8px solid;
+}
+.cont{
+    background: #00000073;
+    width: 22rem;
+    height: 65vh;
+}
+.cont .a{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-top: 5rem;
+    position: relative;
+    top: 390px;
+    left: 20px;
+}
+.cont .a:hover{
+    color: orangered;
+}
+.boxx{
+    background: url(cancer\ \(7\).jpg) no-repeat;
+    width: 22rem;
+    height: 60vh;
+    background-size: cover;
+    border-bottom: orangered 8px solid;
+}
+.box{
+    background: #00000073;
+    width: 22rem;
+    height: 60vh;
+}
+.box .a{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-top: 5rem;
+    position: relative;
+    top: 350px;
+    left: 20px;
+}
+.box .a:hover{
+    color: orangered;
+}
+#aboutus{
+    background: url(cancer\ \(5\).jpg) no-repeat;
+    width: 100%;
+    height: 70vh;
+    background-position: 70%;
+    background-size: cover;
+}
+.aboutus{
+    background: rgba(0, 0, 0, 0.426);
+    width: 100%;
+    height: 70vh;
+}
+.about{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    font-size: 2.5rem;
+    color: white;
+    line-height: 55px;
+    animation: appearances linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes appearances {
+    from{
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+.donate{
+    background: orangered;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    color: white;
+}
+.donate:hover{
+    background: rgb(16, 187, 16);
+}
+.newsletter{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.news{
+    font-size: 1.5rem;
+    line-height: 40px;
+    width: 30rem;
+    animation: appeare linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes appeare {
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    animation: appearee linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes appearee {
+    from{
+        opacity: 0;
+        transform: translateY(800px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+input{
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+.submit{
+    background: orangered;
+    border: none;
+}
+.ourwork{
+    width: 55rem;
+    margin-left: 7rem;
+    line-height: 70px;
+    border-top: .7rem black solid;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: appeare linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes appeare {
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+.ourwork, h3 p{
+    font-size: 2.6rem;
+}
+.ourwork .p{
+    font-size: 1.4rem;
+}
+.howwework{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.work{
+    width: 15rem;
+    height: 70vh;
+    color: white;
+    background: rgb(233, 16, 149);
+    line-height: 30px;
+    padding: 10px;
+    animation: appearances linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes appearances {
+    from{
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+} 
+.work h2,.work1 h2,.work2 h2,.work3 h2 {
+    font-size: 1.3rem;
+    color: white;
+    padding-top: 2rem;
+}
+.work .work1 .work2 .work3, i{
+    color: white;
+    font-size: 8rem;
+    margin-top: 3rem;
+    padding: 10px;
+    text-align: center;
+}
+.work1{
+    width: 15rem;
+    height: 70vh;
+    color: white;
+    background: rgb(10, 159, 239);
+    line-height: 30px;
+    padding: 10px;
+    animation: appeare linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes appeare {
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+.work2{
+    width: 15rem;
+    height: 70vh;
+    color: white;
+    background: rgb(8, 95, 217);
+    line-height: 30px;
+    padding: 10px;
+    animation: appearee linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes appearee {
+    from{
+        opacity: 0;
+        transform: translateY(1200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+.work3{
+    width: 15rem;
+    height: 70vh;
+    color: white;
+    background: rgb(31, 135, 31);
+    line-height: 30px;
+    padding: 10px;
+    animation: appearance linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes appearance {
+    from{
+        opacity: 0;
+        transform: translateX(100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+.donating h1{
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    color: orangered;
+    text-align: center;
+}
+.donating{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    padding: 10px;
+    animation: app linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 70%;
+}
+@keyframes app {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.payment{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    animation: appearances linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes appearances {
+    from{
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+.crypto{
+    border: 1px solid rgba(191, 183, 183, 0.722);
+    border-radius: 6px;
+    width: 30rem;
+    height: 70vh;
+}
+.crypto h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.top{
+    border-bottom: 1px solid rgba(191, 183, 183, 0.722);
+    background: rgba(231, 231, 231, 0.79);
+}
+.top h2{
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.note{
+    width: 40rem;
+    font-size: 1.3rem;
+    animation: appearance linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes appearance {
+    from{
+        opacity: 0;
+        transform: translateX(100px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+.note h2{
+    font-size: 2rem;
+    color: black;
+}
+.gateway{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.gateway p{
+    border-bottom: 1px solid rgba(191, 183, 183, 0.722);
+    border: 1px solid  rgba(191, 183, 183, 0.722);
+    padding: 10px;
+    font-weight: 300;
+    border-radius: 5px;
+}
+.gateway img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 18%;
+}
+.crypto a{
+    font-size: 1.4rem;
+    background: orangered;
+    padding: 15px 30px;
+    border-radius: 5px;
+    position: relative;
+    top: 5%;
+    left: 35%;
+}
+.crypto a:hover{
+    background: rgb(31, 135, 31);
+    color: white;
+}
+/*footer*/
+footer{
+    background: white;
+}
+.upper{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+.inner, .middle, .centre{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: appeared linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 60%;
+  }
+  @keyframes appeared {
+    from{
+        scale: 0.5;
+    }
+    to {
+        scale: 1;
+    }
+}
+.inner .middle .centre, a{
+    color: black;
+    font-size: 1.1rem;
+}
+.inner .middle .centre, a:hover{
+    color: rgb(16, 187, 16);
+}
+.inner .middle .centre, h2{
+    color: orangered;
+}
+.lower{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+.lower a{
+    color: rgb(16, 187, 16);
+}
+.lower a:hover{
+    color: orangered;
+}
+.logo img{
+    padding-left: 10rem;
+    width: 100px;
+}
+.footer{
+    font-size: 1.2rem;
+    padding: 10px;
+    line-height: 40px;
+    padding-left: 7rem;
+    margin-bottom: 5rem;
+}
+.footer i{
+    font-size: 3rem;
+    color: orangered;
+}
+.footer i:hover{
+    color: rgb(16, 187, 16);
+}
+span{
+    color: rgb(16, 187, 16);
+}
+span:hover{
+    color: orangered;
+}
+/*slider*/
+.children{
+    max-height: 400px;
+    display: flex;
+    overflow: auto;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+.children::-webkit-scrollbar{
+    width: 0;
+    height: 10px;
+    background: orangered;
+}
+.children::-webkit-scrollbar-thumb{
+    background: rgb(16, 187, 16);
+    border-radius: 30px;
+}
+.children, .item1,.item2,.item3,.item4{
+    min-width: 580px;
+    height: 65rem;
+    line-height: 180px;
+    text-align: center;
+}
+.item1{
+    background: url(cancer\ \(2\).jpg) no-repeat;
+    width: 10rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: 90%;
+}
+.item2{
+    background: url(cancer\ \(3\).jpg) no-repeat;
+    width: 30rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: 80%;
+}
+.item3{
+    background: url(cancer\ \(4\).jpg) no-repeat;
+    width: 30rem;
+    height: 25rem;
+    background-size: cover;
+}
+.item4{
+    background: url(download\ \(6\).jpg) no-repeat;
+    width: 10rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: 90%;
+}
+@media (max-width: 1036px){
+    header{
+        width: 92%;
+        position: fixed;
+    }
+    .start{
+        background: url(cancer.jpg) no-repeat;
+        width: 64rem;
+        height: 110vh;
+        background-size: cover;
+    }
+    .started{
+        background: #00000069;
+        width: 100%;
+        height: 110vh;
+    }
+    .contain{
+        width: 23rem;
+    }
+    .whatwedo{
+        gap: 1rem;
+        margin-bottom: 5rem;
+    }
+    .ourwork{
+        width: 50rem;
+    }
+    .work,.work1,.work2,.work3{
+        width: 13rem;
+    }
+    .donating{
+        width: 60rem;
+        font-size: 1.3rem;
+        margin: auto;
+    }
+    .crypto{
+        width: 30rem;
+    }
+    .note{
+        width: 25rem;
+        font-size: 1.2rem;
+    }
+    .gateway{
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+    .gateway p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 878px){
+    .start{
+        width: 63.3rem;
+    }
+    .whatwedo{
+        display: flex;
+        justify-content: space-between;
+        width: 60rem;
+        margin-bottom: 5rem;
+    }
+    .contain{
+        width: 30rem;
+    }
+    .container{
+        width: 5rem;
+    } 
+    .howwework{
+        width: 63.3rem;
+    }
+    .donating{
+        width: 62rem;
+    }
+    .payment{
+        width: 63.3rem;
+    }
+    .aboutus, #aboutus{
+        width: 63.3rem;
+    }
+    .newsletter{
+        width: 63.3rem;
+    }
+    footer{
+        width: 63.3rem;
+    }
+}
+@media (max-width: 768px){
+    header{
+        width: 92.5%;
+        position: fixed;
+    }
+    .start{
+        width: 66.9rem;
+    }
+    .whatwedo{
+        display: flex;
+        justify-content: space-between;
+        width: 65.8rem;
+        margin-bottom: 5rem;
+    }
+    .contain{
+        width: 30rem;
+    }
+    .container{
+        width: 5rem;
+    } 
+    .howwework{
+        width: 67rem;
+    }
+    .donating{
+        width: 65.7rem;
+    }
+    .payment{
+        width: 67rem;
+    }
+    .crypto{
+        width: 32rem;
+        font-size: 1.2rem;
+        height: 30rem;
+    }
+    .note{
+        width: 30rem;
+        font-size: 1.3rem;
+    }
+    .aboutus, #aboutus{
+        width: 67rem;
+    }
+    .newsletter{
+        width: 67rem;
+    }
+    footer{
+        width: 67rem;
+    }
+}
+@media (max-width: 568px){
+    header{
+        width: 92.3%;
+        position: fixed;
+    }
+    .started, .start{
+        width: 66.9rem;
+        height: 50rem;
+        background-position: 70%;
+    }
+    .whatwedo{
+        display: flex;
+        justify-content: space-between;
+        width: 65.8rem;
+        margin-bottom: 5rem;
+    }
+    .contain{
+        width: 30rem;
+        animation-range: entry 0 cover 10%;
+    }
+    .container{
+        width: 5rem;
+    } 
+    .howwework{
+        width: 67rem;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: auto auto;
+    }
+    .work,.work1,.work2,.work3{
+        width: 28rem;
+        height: 45rem;
+        font-size: 2rem;
+    }
+    .donating{
+        width: 65.7rem;
+        font-size: 2rem;
+    }
+    .payment{
+        width: 67rem;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .top h2{
+        font-size: 2rem;
+    }
+    .crypto h3{
+        font-size: 2.5rem;
+    }
+    .gateway{
+        gap: 2rem;
+    }
+    .gateway p{
+        font-size: 1.8rem;
+        height: 10vh;
+    }
+    .gateway img{
+        width: 60px;
+        height: 60px;
+    }
+    .crypto{
+        margin: auto;
+        width: 50rem;
+        font-size: 1.2rem;
+        height: 45rem;
+    }
+    .note{
+        margin: auto;
+        width: 50rem;
+        font-size: 2rem;
+    }
+    .aboutus, #aboutus{
+        width: 67rem;
+    }
+    .newsletter{
+        width: 67rem;
+    }
+    footer{
+        width: 67rem;
+    }
+    .upper a{
+        font-size: 2rem;
+    }
+    .lower a{
+        font-size: 2rem;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .footer{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 468px){
+    header{
+        width: 92.5%;
+        height: 23vh;
+        position: fixed;
+    }
+    nav{
+        position: absolute;
+        left: 300px;
+        top: -500px;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        transition: 0.2s;
+    }
+    #nav_check:checked ~ nav{
+        top: 0;
+    }
+    .header img{
+        width: 28rem;
+    }
+    nav .header{
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    nav ul li a{
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 2rem;
+    }
+    nav ul {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 20px;
+        margin-top: 30px;
+        list-style: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger div{
+        width: 5rem;
+        height: .9rem;
+        background: orangered;
+    }
+    .hamburger div:hover{
+        background: rgb(16, 187, 16);
+    }
+    .started, .start{
+        width: 68.7rem;
+        height: 100rem;
+        background-position: 70%;
+    }
+    .starting{
+       width: 40rem;
+       font-size: 5rem;
+       padding-top: 25rem;
+       margin-left: 3rem;
+    }
+    .starting h3{
+        font-size: 3rem;
+    }
+    .whatwedo{
+        display: flex;
+        width: 68.6rem;
+        margin-bottom: 5rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .contain{
+        width: 50rem;
+        font-size: 4rem;
+        animation-range: entry 0 cover 10%;
+    }
+    .contain h2{
+        font-size: 3rem;
+    }
+    .container{
+        width: 7rem;
+    } 
+    .containing{
+        width: 60rem;
+    }
+    .containing h2{
+        font-size: 3rem;
+    }
+    .conts{
+        background: url(cancer\ \(1\).jpg) no-repeat;
+        width: 50rem;
+        height: 50rem;
+        background-size: cover;
+        border-bottom: orangered 8px solid;
+    }
+    .cont{
+        background: #00000073;
+        width: 50rem;
+        height: 50rem;
+    }
+    .cont .a{
+        color: white;
+        font-size: 2.8rem;
+        font-weight: 800;
+        padding-top: 5rem;
+        position: relative;
+        top: 700px;
+        left: 40px;
+    }
+    .cont .a:hover{
+        color: orangered;
+    }
+    .boxx{
+        background: url(cancer\ \(7\).jpg) no-repeat;
+        width: 50rem;
+        height: 50rem;
+        background-size: cover;
+        border-bottom: orangered 8px solid;
+    }
+    .box{
+        background: #00000073;
+        width: 50rem;
+        height: 50rem;
+    }
+    .box .a{
+        color: white;
+        font-size: 2.8rem;
+        font-weight: 800;
+        padding-top: 5rem;
+        position: relative;
+        top: 700px;
+        left: 50px;
+    }
+    .box .a:hover{
+        color: orangered;
+    } 
+    .ourwork .p{
+        font-size: 4rem;
+    }
+    .ourwork{
+        font-size: 3rem;
+        line-height: 80px;
+    }
+    .howwework{
+        width: 67rem;
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: auto;
+    }
+    .work,.work1,.work2,.work3{
+        width: 58rem;
+        height: 85rem;
+        font-size: 4rem;
+        line-height: 70px;
+    }
+    .work h2,.work1 h2,.work2 h2,.work3 h2{
+        font-size: 3.5rem;
+    }
+    .donating{
+        width: 65rem;
+        padding: 30px;
+        margin: auto;
+        font-size: 3rem;
+    }
+    .payment{
+        width: 67rem;
+        display: flex;
+        gap: 5rem;
+        flex-direction: column;
+    }
+    .top h2{
+        font-size: 3rem;
+    }
+    .crypto h3{
+        font-size: 3rem;
+    }
+    .gateway{
+        gap: 3.5rem;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .gateway p{
+        font-size: 3rem;
+        padding: 30px;
+        height: 15vh;
+    }
+    .gateway img{
+        width: 100px;
+        height: 100px;
+    }
+    .crypto{
+        margin: auto;
+        width: 60rem;
+        font-size: 1.2rem;
+        height: 80rem;
+    }
+    .crypto a{
+        padding: 20px 30px;
+        font-size: 3rem;
+    }
+    .note{
+        margin: auto;
+        width: 60rem;
+        font-size: 3.5rem;
+    }
+    .note h2{
+        font-size: 3rem;
+    }
+    .aboutus, #aboutus{
+        width: 68.7rem;
+        height: 40rem;
+    }
+    .about{
+        padding-top: 8rem;
+        font-size: 3rem;
+        width: 30rem;
+    }
+    .about h2{
+        font-size: 3rem;
+    }
+    .aboutus a{
+        padding: 20px 30px;
+        font-size: 3rem;
+    }
+    .newsletter{
+        width: 65rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .news{
+        margin: auto;
+        width: 60rem;
+        font-size: 3rem;
+        line-height: 55px;
+        margin-bottom: 5rem;
+    }
+    .news img{
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+    .input{
+        width: 50rem;
+        margin: auto;
+    }
+    .input h2{
+        font-size: 3rem;
+    }
+    input{
+        font-size: 3rem;
+    }
+    footer{
+        width: 68rem;
+        margin-bottom: 10rem;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .inner, .middle, .centre{
+        width: 55rem;
+        margin: auto;
+    }
+    .upper a{
+        font-size: 3rem;
+    }
+    .lower a{
+        font-size: 2.6rem;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .footer{
+        width: 58rem;
+        font-size: 3rem;
+        line-height: 70px;
+    }
+    /*slider*/
+.children{
+    max-height: 650px;
+    display: flex;
+    overflow: auto;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+.children::-webkit-scrollbar{
+    width: 0;
+    height: 10px;
+    background: orangered;
+}
+.children::-webkit-scrollbar-thumb{
+    background: rgb(16, 187, 16);
+    border-radius: 30px;
+}
+.children, .item1,.item2,.item3,.item4{
+    min-width: 1100px;
+    height: 65rem;
+    line-height: 180px;
+    text-align: center;
+}
+.item1{
+    background: url(cancer\ \(2\).jpg) no-repeat;
+    width: 10rem;
+    height: 40rem;
+    background-size: cover;
+    background-position: 30%;
+}
+.item2{
+    background: url(cancer\ \(3\).jpg) no-repeat;
+    width: 30rem;
+    height: 40rem;
+    background-size: cover;
+    background-position: 80%;
+}
+.item3{
+    background: url(cancer\ \(4\).jpg) no-repeat;
+    width: 30rem;
+    height: 40rem;
+    background-size: cover;
+}
+.item4{
+    background: url(download\ \(6\).jpg) no-repeat;
+    width: 10rem;
+    height: 40rem;
+    background-size: cover;
+    background-position: 90%;
+}
+}
+@media (max-width: 390px){
+    header{
+        width: 92.6%;
+        height: 23vh;
+        position: fixed;
+    }
+    nav{
+        position: absolute;
+        left: 300px;
+        top: -500px;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        transition: 0.2s;
+    }
+    #nav_check:checked ~ nav{
+        top: 0;
+    }
+    .header img{
+        width: 22rem;
+    }
+    nav .header{
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    nav ul li a{
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 2rem;
+    }
+    nav ul {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 20px;
+        margin-top: 30px;
+        list-style: none;
+    }
+    .hamburger{
+        display:block;
+    }
+    .hamburger div{
+        width: 5rem;
+        height: .9rem;
+        background: orangered;
+    }
+    .hamburger div:hover{
+        background: rgb(16, 187, 16);
+    }
+    .started, .start{
+        width: 68.8rem;
+        height: 100rem;
+        background-position: 70%;
+    }
+    .starting{
+        width: 40rem;
+       font-size: 5rem;
+       padding-top: 25rem;
+       margin-left: 3rem;
+    }
+    .starting h3{
+        font-size: 3rem;
+    }
+    .whatwedo{
+        display: flex;
+        width: 67rem;
+        margin-bottom: 5rem;
+    }
+    .contain{
+        width: 45rem;
+        font-size: 3rem;
+        animation-range: entry 0 cover 20%;
+    }
+    .contain h2{
+        font-size: 3rem;
+    }
+    .containing{
+        width: 40rem;
+    }
+    .containing h2{
+        font-size: 3rem;
+    }
+    .container{
+        width: 7rem;
+        height: 200rem;
+    }
+    .conts{
+        background: url(cancer\ \(1\).jpg) no-repeat;
+        width: 50rem;
+        height: 50rem;
+        background-size: cover;
+        border-bottom: orangered 8px solid;
+    }
+    .cont{
+        background: #00000073;
+        width: 50rem;
+        height: 50rem;
+    }
+    .cont .a{
+        color: white;
+        font-size: 2.8rem;
+        font-weight: 800;
+        padding-top: 5rem;
+        position: relative;
+        top: 700px;
+        left: 40px;
+    }
+    .cont .a:hover{
+        color: orangered;
+    }
+    .boxx{
+        background: url(cancer\ \(7\).jpg) no-repeat;
+        width: 50rem;
+        height: 50rem;
+        background-size: cover;
+        border-bottom: orangered 8px solid;
+    }
+    .box{
+        background: #00000073;
+        width: 50rem;
+        height: 50rem;
+    }
+    .box .a{
+        color: white;
+        font-size: 2.8rem;
+        font-weight: 800;
+        padding-top: 5rem;
+        position: relative;
+        top: 700px;
+        left: 50px;
+    }
+    .box .a:hover{
+        color: orangered;
+    } 
+    .ourwork .p{
+        font-size: 2.5rem;
+    }
+    .howwework{
+        width: 67rem;
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: auto;
+    }
+    .work h2,.work1 h2,.work2 h2,.work3 h2{
+        font-size: 3rem;
+    }
+    .work,.work1,.work2,.work3{
+        width: 50rem;
+        height: 70rem;
+        font-size: 3.5rem;
+        line-height: 65px;
+    }
+    .donating{
+        width: 65rem;
+        margin: auto;
+        font-size: 3rem;
+    }
+    .payment{
+        width: 67rem;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .top h2{
+        font-size: 2rem;
+    }
+    .crypto h3{
+        font-size: 2.5rem;
+    }
+    .gateway{
+        gap: 3.5rem;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .gateway p{
+        font-size: 2.3rem;
+        padding: 30px;
+        height: 15vh;
+    }
+    .gateway img{
+        width: 70px;
+        height: 70px;
+    }
+    .crypto{
+        margin: auto;
+        width: 60rem;
+        font-size: 1.2rem;
+        height: 65rem;
+    }
+    .crypto a{
+        padding: 20px 30px;
+        font-size: 3rem;
+    }
+    .note{
+        margin: auto;
+        width: 60rem;
+        font-size: 2.5rem;
+    }
+    .aboutus, #aboutus{
+        width: 68.7rem;
+        height: 40rem;
+    }
+    .about{
+        padding-top: 8rem;
+        font-size: 3rem;
+        width: 30rem;
+    }
+    .about h2{
+        font-size: 3rem;
+    }
+    .aboutus a{
+        padding: 20px 30px;
+        font-size: 3rem;
+    }
+    .newsletter{
+        width: 65rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .news{
+        margin: auto;
+        width: 60rem;
+        font-size: 3rem;
+        line-height: 55px;
+        margin-bottom: 5rem;
+    }
+    .news img{
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+    .input{
+        width: 50rem;
+        margin: auto;
+    }
+    .input h2{
+        font-size: 3rem;
+    }
+    input{
+        font-size: 3rem;
+    }
+    footer{
+        width: 67rem;
+        margin-bottom: 10rem;
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .inner, .middle, .centre{
+        width: 55rem;
+        margin: auto;
+    }
+    .upper a{
+        font-size: 3rem;
+    }
+    .lower a{
+        font-size: 2.6rem;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .footer{
+        width: 58rem;
+        font-size: 3rem;
+        line-height: 70px;
+    }
+    .children{
+        max-height: 790px;
+        display: flex;
+        overflow: auto;
+        margin-bottom: 10rem;
+        margin-top: 5rem;
+    }
+    .children, .item1,.item2,.item3,.item4{
+        min-width: 1100px;
+        height: 50rem;
+        line-height: 180px;
+        text-align: center;
+    }
+}
